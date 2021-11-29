@@ -88,6 +88,23 @@ nav li a {
   margin-top: -4px;
   padding: 5px;
 }
+
+.classZero {
+  background-color: gray;
+}
+
+.lessThanFifty {
+  background-color: red;
+}
+
+.greaterOrLess {
+  background-color: yellow;
+}
+
+.greater {
+  background-color: green;
+}
+
 .movie-details {
   margin-top: 30px;
   display: flex;
@@ -105,12 +122,20 @@ nav li a {
 .rating {
   width: 100px;
   padding: 3px;
-  background: green;
+  /* background: green; */
   position: absolute;
   right: 0px;
   color: #fff;
   transform: rotate(40deg);
   right: -20px;
+}
+.detail-rate {
+  padding: 4px;
+  font-weight: bold;
+}
+.original-title {
+  font-size: 20px;
+  font-weight: bold;
 }
 form {
   width: 50%;
@@ -153,7 +178,7 @@ form button {
   background: #ffa000;
   color: #fff;
   font-weight: bold;
-  margin-top: 400px;
+  margin-top: 300px;
 }
 
 @media (max-width: 771px) {

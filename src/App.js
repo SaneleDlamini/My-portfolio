@@ -20,14 +20,9 @@ function App() {
    const navigate = useNavigate();
 
    const handleView = (id) => {
-      // alert(id);
       navigate(`/movies/${id}`);
-
-     const single = movies.filter(movie => movie.id == id)
-     setSingleMovie(single);
    }
-console.log(singleMovie);
-
+   
    const handleMovies = () => {
       fetch('https://api.themoviedb.org/3/movie/popular?api_key=d4f7b87d7cedfdfbbb297f46aa3e8779&language=en-US&page=1').then(response => {
         return response.json();
